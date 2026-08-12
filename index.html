@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Cyber security and Python portfolio">
+<title>Terminal Portfolio</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%}
+body{background:#0a0a0a;color:#33ff00;font-family:"Courier New",monospace;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:100;
+background:repeating-linear-gradient(to bottom,transparent 0,transparent 3px,rgba(51,255,0,.025) 4px)}
+.terminal{width:min(1100px,94%);min-height:90vh;margin:5vh auto;border:1px solid #1f521f;padding:28px;background:#0a0a0a}
+.terminal-header{border-bottom:1px solid #1f521f;padding-bottom:18px;margin-bottom:25px}
+.ascii{font-size:clamp(10px,2vw,16px);line-height:1.2;white-space:pre;overflow-x:auto;text-shadow:0 0 5px rgba(51,255,0,.5)}
+.prompt{color:#ffb000}.command{margin:22px 0;font-size:clamp(14px,2vw,18px)}
+.title{font-size:clamp(28px,6vw,64px);margin:30px 0 10px;letter-spacing:3px;text-shadow:0 0 8px rgba(51,255,0,.6)}
+.subtitle{color:#1f521f;font-size:15px}.window{border:1px solid #1f521f;margin-top:30px}
+.window-title{padding:10px 15px;border-bottom:1px solid #1f521f;color:#0a0a0a;background:#33ff00;font-weight:bold}
+.window-content{padding:25px}.skill{margin:25px 0}.skill-name{display:flex;justify-content:space-between;margin-bottom:8px}
+.skill-name span:last-child{color:#ffb000}.bar{border:1px solid #1f521f;padding:5px;letter-spacing:2px;overflow:hidden;white-space:nowrap}
+.filled{color:#33ff00;text-shadow:0 0 5px rgba(51,255,0,.6)}.empty{color:#1f521f}
+.status{margin-top:35px;padding-top:20px;border-top:1px dashed #1f521f;line-height:2}.ok{color:#33ff00}
+.footer{margin-top:35px;padding-top:15px;border-top:1px solid #1f521f;color:#1f521f;font-size:13px}
+.cursor{display:inline-block;color:#33ff00;animation:blink .8s steps(1) infinite}
+@keyframes blink{50%{opacity:0}}.typing{overflow:hidden;white-space:nowrap;border-right:2px solid #33ff00;width:0;
+animation:typing 2.5s steps(30,end) forwards,cursor .8s step-end infinite}
+@keyframes typing{from{width:0}to{width:30ch}}@keyframes cursor{50%{border-color:transparent}}
+@media(max-width:600px){.terminal{width:96%;margin:2vh auto;padding:15px}.window-content{padding:15px}.ascii{font-size:8px}.title{letter-spacing:1px}}
+</style>
+</head>
+<body>
+<main class="terminal">
+<header class="terminal-header">
+<pre class="ascii">
+ _______                  _             _
+|__   __|                (_)           | |
+   | | ___ _ __ _ __ ___  _ _ __   __ _| |
+   | |/ _ \ '__| '_ ` _ \| | '_ \ / _` | |
+   | |  __/ |  | | | | | | | | | | (_| | |
+   |_|\___|_|  |_| |_| |_|_|_| |_|\__,_|_|
+</pre>
+<div class="command"><span class="prompt">user@portfolio:~$</span> ./initialize.sh</div>
+<h1 class="title">CYBER PORTFOLIO</h1>
+<p class="subtitle">&gt; SYSTEM ACCESS GRANTED_</p>
+</header>
+
+<section class="window">
+<div class="window-title">+--- SKILLS ---+</div>
+<div class="window-content">
+<div class="command"><span class="prompt">user@portfolio:~$</span> skills --list</div>
+
+<div class="skill">
+<div class="skill-name"><span>&gt; PYTHON</span><span>90%</span></div>
+<div class="bar"><span class="filled">||||||||||||||||||||</span><span class="empty">..</span></div>
+</div>
+
+<div class="skill">
+<div class="skill-name"><span>&gt; CYBER SECURITY</span><span>80%</span></div>
+<div class="bar"><span class="filled">||||||||||||||||||</span><span class="empty">....</span></div>
+</div>
+
+<div class="status">
+<div><span class="ok">[OK]</span> Python environment detected</div>
+<div><span class="ok">[OK]</span> Cyber security module loaded</div>
+<div><span class="ok">[OK]</span> Portfolio system online</div>
+<div><span class="ok">[OK]</span> Security status: ACTIVE</div>
+</div>
+</div>
+</section>
+
+<section class="window">
+<div class="window-title">+--- TERMINAL ---+</div>
+<div class="window-content">
+<div class="command typing">Welcome to my digital workspace_</div>
+<p><span class="prompt">user@portfolio:~$</span> whoami</p>
+<p>CYBER SECURITY &amp; PYTHON DEVELOPER</p>
+<p><span class="prompt">user@portfolio:~$</span> status</p>
+<p>SYSTEM STATUS: <span class="ok">ONLINE</span></p>
+</div>
+</section>
+
+<footer class="footer">
+user@portfolio:~$ _ <span class="cursor">█</span><br><br>
+© 2026 // TERMINAL PORTFOLIO
+</footer>
+</main>
+</body>
+</html>
